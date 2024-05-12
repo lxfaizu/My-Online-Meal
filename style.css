@@ -1,0 +1,179 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --navbar-height: 80px;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+#logo img {
+    height: 60px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Home Section */
+#home {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    background: url('bg1.jpg') no-repeat center center/cover;
+}
+
+#home h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#home .btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+/* Service Section */
+.services-container {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.services-container .box {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.services-container .box img {
+    max-width: 100px;
+}
+
+.services-container .box h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.services-container .box p {
+    font-size: 1.1rem;
+}
+
+/* Client Section */
+#client-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.client-item img {
+    max-height: 80px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#contact-box form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-box .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-box input[type="text"],
+#contact-box input[type="email"],
+#contact-box input[type="tel"],
+#contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+#contact-box input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
